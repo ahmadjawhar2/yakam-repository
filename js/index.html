@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Sign Up Form</title>
+</head>
+<body> <!-- Create Form-->
+    <form action="#">   <!-- Action: agarr bmanawe esh lagal Server da bkayn URL Serveraka danusin-->
+        <div>
+            <!-- User ba Label dadazane Iputaka loch bakar detn loya dabi daym habitn -->
+            <label for="f-name">First Name :</label> <!-- nusinek danusi bo away User lalay runbetn aw Inputa loch bakar detn dabi tagi close lo daney-->
+            <input type="text" name="f-name" id="f-name"> <!-- nawi dsanusin loya tppe Inputtakaman krdita Text-->
+        </div>
+
+        <div>
+            <!-- User ba Label dadazane Iputaka loch bakar detn loya dabi daym habitn -->
+            <label for="s-name">Last Name :</label> 
+            <input type="text" name="s-name" id="s-name"> 
+        </div>
+
+        <div>
+            <!-- User ba Label dadazane Iputaka loch bakar detn loya dabi daym habitn -->
+            <label for="age">Age:</label> 
+            <input type="number" name="age" id="age"> 
+        </div>
+
+        <div>
+            <p>Gender</p>
+            <Label for="male">Male</Label>
+            <input type="radio" class="gender"
+            name="gender" value="male">
+            <hr>
+        </div>
+
+        <div>   
+            <Label for="female">Female</Label>
+            <input type="radio" class="gender"
+            name="gender" value="female">
+            <hr>
+        </div>
+
+        <div>
+            <label for="student">Student:</label> 
+            <input type="checkbox" name="student" id="student"> 
+        </div>
+        
+        <div>
+            <label for="city">City</label>
+            <select name="city" id="city" > <!-- damanwe chand Optionek bayna User-->
+                <option value="...">Select City</option>
+                <option value="...">Sulaimani</option>
+                <option value="...">Hawler</option>
+                <option value="...">Duhok</option>
+
+            </select>
+        </div>
+
+        <button id="button">Sign Up</button>
+
+    </form>
+
+    <div id="infos">
+        <div>
+            <p>Name:</p>
+            <p id="student-name"></p>
+        </div>
+        <div>
+            <p>Age:</p>
+            <p id="student-age"></p>
+        </div>
+        <div>
+            <p>Gender:</p>
+            <p id="student-gender"></p>
+        </div>
+        <div>
+            <p>Now is Student:</p>
+            <p id="is-student"></p>
+        </div>
+        <div>
+            <p>City:</p>
+            <p id="student-city"></p>
+        </div>
+    </div>
+
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
